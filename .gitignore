@@ -1,10 +1,10 @@
-core/**/*
-vendor/**/*
-sites/**/files/**/*
-libraries/**/*
-sites/**/libraries/**/*
-profiles/**/libraries/**/*
-**/js_test_files/**/*
+vendor
+sites/*/settings*.php
+sites/*/services*.yml
+sites/*/files
+sites/*/private
+sites/simpletest
+
 **/node_modules/**/*
 sites/default/services.yml
 sites/default/settings.local.php
