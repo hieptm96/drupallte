@@ -1,0 +1,20 @@
+uuid: 51ef17c0-c9e8-4076-9766-2c7cc7a7d94a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - admin_lte
+_core:
+  default_config_hash: bv5piM4ZskyDJx4pITMuUfhCJ4rtUvftucl8Br2Ij9Q
+id: admin_lte_page_title
+theme: admin_lte
+region: header
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

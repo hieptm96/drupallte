@@ -1,0 +1,25 @@
+uuid: 502529a6-2bef-427c-bf73-89dccd8793b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - admin_lte
+_core:
+  default_config_hash: 1uJn9TqDMjmJ07i4UzZELOMir3-gvCsB4sDM26GAzPk
+id: admin_lte_branding
+theme: admin_lte
+region: navbar_branding
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

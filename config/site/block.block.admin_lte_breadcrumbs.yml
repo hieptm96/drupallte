@@ -1,0 +1,22 @@
+uuid: 7daa7a9f-70b2-478c-bfe0-de9052732967
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - admin_lte
+_core:
+  default_config_hash: YEDJDx_JMr_A6YFBkddAW0ZU2nOYPfjrFj-nlLDlVCI
+id: admin_lte_breadcrumbs
+theme: admin_lte
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

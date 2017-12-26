@@ -1,0 +1,22 @@
+uuid: 03632297-730a-4d90-8af6-e5fb6257388d
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - admin_lte
+_core:
+  default_config_hash: WTNp9mGsjhzEY2fEeL-EyL4280Z4BlhB_q9Bg9wKGGY
+id: admin_lte_help
+theme: admin_lte
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

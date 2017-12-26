@@ -1,0 +1,22 @@
+uuid: b72c7349-84bc-40fb-ae3b-248e03cb2acb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - admin_lte
+_core:
+  default_config_hash: AWfugbBlFeoC9I3_Jr5yD2R6ll1RVZ_s_0ppshL7n_A
+id: admin_lte_content
+theme: admin_lte
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

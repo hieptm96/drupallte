@@ -1,0 +1,22 @@
+uuid: 3c15efdc-441d-44b3-b9af-1b79f936af31
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - admin_lte
+_core:
+  default_config_hash: _90G9mg3FgB5yU85zn7RWiqP7DutMI9CS_5KbMscUhU
+id: admin_lte_login
+theme: admin_lte
+region: content
+weight: -6
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility: {  }

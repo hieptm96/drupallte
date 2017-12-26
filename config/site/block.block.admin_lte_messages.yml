@@ -1,0 +1,22 @@
+uuid: 88f7603d-eccb-4b0c-8f49-c4288fa221a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - admin_lte
+_core:
+  default_config_hash: d5pb_AS0z0hmFRQypzC9UCqlUeSqYNJPPBsg47Qxrwg
+id: admin_lte_messages
+theme: admin_lte
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

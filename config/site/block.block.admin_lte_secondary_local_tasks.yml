@@ -1,0 +1,22 @@
+uuid: 81e840f5-f3c5-4fd1-935d-549a8a1eb0f3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - admin_lte
+_core:
+  default_config_hash: T1M0hVYmrsybn8lwEKYy4QiLrl6d_uAi_nY2LhIg9fU
+id: admin_lte_secondary_local_tasks
+theme: admin_lte
+region: highlighted
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }
