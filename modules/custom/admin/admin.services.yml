@@ -1,0 +1,6 @@
+services:
+  member:
+    class: Drupal\admin\Member
+    arguments: ['@database']
+    tags:
+      - { name: backend_overridable }

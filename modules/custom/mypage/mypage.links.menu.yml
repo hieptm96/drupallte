@@ -1,0 +1,4 @@
+mypage.view:
+  title: 'Add content for mypage'
+  parent: system.admin
+  route_name: mypage.add_record

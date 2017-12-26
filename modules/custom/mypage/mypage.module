@@ -1,0 +1,15 @@
+<?php
+
+/**
+* Implements hook_theme().
+*/
+function mypage_theme() {
+ return array(
+   'mypage_theme' => array( // Theme name
+    'variables' => array( // Array of name for varialbles
+    'data' => array(),
+    ),
+    'templates' => 'templates/mypage-theme', // Path to the template without .html.twig in which the same variables will be available as specified above
+   ),
+ );
+}

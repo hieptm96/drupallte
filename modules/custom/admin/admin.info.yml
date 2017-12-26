@@ -1,0 +1,6 @@
+name: AdminLTE management
+description: Admin management member, event, ...
+package: Custom
+type: module
+core: 8.x
+configure: admin.list_member

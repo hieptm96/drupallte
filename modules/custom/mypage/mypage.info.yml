@@ -1,0 +1,23 @@
+# Module name.
+name: My Page
+
+# Module detailed description.
+description: Create page in drupal 8
+
+# Specify in which module group the module will be displayed on page /admin/modules.
+package: Custom
+
+# Specify that it is a module. It can be (module, theme, profile).
+type: module
+
+# Key that defines the core version. Required!!!
+core: 8.x
+
+# Here specify the name of the route (which is declared in mypage.routing.yml file) for module configuration.
+configure: mypage.add_record
+
+# There also can be these values:
+# dependencies - the list of modules our module depends on.
+# test_dependencies - the list of modules that will be enabled when running automated tests.
+# hidden: TRUE - the option hides this module from the list of modules.
+# To show all hidden modules in the list, you should specify $settings['extension_discovery_scan_tests'] = TRUE в settings.php.

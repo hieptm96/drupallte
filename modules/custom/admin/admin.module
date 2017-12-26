@@ -1,0 +1,27 @@
+<?php
+
+/**
+* Implements hook_theme().
+*/
+function admin_theme() {
+ return array(
+    // 'member_theme' => array(
+    //   'variables' => array(
+    //     'data' => array(),
+    //   ),
+    //   'templates' => 'templates/member-theme',
+    // ),
+    'member_list' => array(
+      'variables' => array(
+        'members' => array(),
+      ),
+      'templates' => 'templates/member-list',
+    ),
+    'member_add' => array(
+      'variables' => array(
+        // 'members' => array(),
+      ),
+      'templates' => 'templates/member-add',
+    ),
+ );
+}

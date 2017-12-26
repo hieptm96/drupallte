@@ -1,0 +1,41 @@
+admin.list_member:
+  path: '/admin/members'
+  defaults:
+    _title: 'List member'
+    _controller: '\Drupal\admin\Controller\MembersController::index'
+  requirements:
+    _permission: 'access simple page'
+
+# admin.add_member:
+#   path: '/admin/members/new'
+#   defaults:
+#     _title: 'Add new member'
+#     _form: '\Drupal\admin\Form\AddMember'
+#   requirements:
+#     _permission: 'access simple page'
+
+admin.add_member:
+  path: '/admin/members/create'
+  defaults:
+    _title: 'Add new member'
+    _controller: '\Drupal\admin\Controller\MembersController::new'
+  requirements:
+    _permission: 'access simple page'
+
+admin.store_member:
+  path: '/admin/members/store'
+  defaults:
+    _title: 'Store new member'
+    _controller: '\Drupal\admin\Controller\MembersController::store'
+  methods: [POST,HEAD]
+  requirements:
+    _permission: 'access simple page'
+
+admin.view_member:
+  path: '/admin/members/{mypage_id}'
+  defaults:
+    _title: 'Member'
+    _controller: '\Drupal\admin\Controller\MembersController::show'
+  requirements:
+    _permission: 'view member'
+    mypage_id: \d+

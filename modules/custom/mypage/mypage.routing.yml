@@ -1,0 +1,16 @@
+mypage.add_record:
+  path: '/admin/mypage/add_record'
+  defaults:
+    _title: 'Add record'
+    _form: '\Drupal\mypage\Form\ConfigFormMyPage'
+  requirements:
+    _permission: 'access simple page'
+
+mypage.view:
+  path: '/mypage/{mypage_id}'
+  defaults:
+    _title: 'My page'
+    _controller: '\Drupal\mypage\Controller\MyPageController::content'
+  requirements:
+    _permission: 'view content'
+    mypage_id: \d+

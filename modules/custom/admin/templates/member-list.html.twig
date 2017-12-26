@@ -1,0 +1,39 @@
+<div class="row column text-center">
+  <div class="col-xs-12"><a href="/admin/members/create" class="btn btn-success pull-right" style="margin-bottom: 15px;">New member</a></div>
+  <div class="col-xs-12">
+    <div class="box">
+      <div class="box-header with-border">
+        <h3 class="box-title">List members</h3>
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+        <table class="table table-bordered">
+          <tr>
+            <th style="width: 10px">#</th>
+            <th>Username</th>
+            <th>Address</th>
+            <th style="width: 40px">#</th>
+          </tr>
+          {% for member in members %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ member.username }}</td>
+            <td>{{ member.address }}</td>
+            <td><a href="#">Edit</a></td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+      <!-- /.box-body -->
+      <div class="box-footer clearfix">
+        <ul class="pagination pagination-sm no-margin pull-right">
+          <li><a href="#">&laquo;</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">&raquo;</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

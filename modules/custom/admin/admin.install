@@ -1,0 +1,37 @@
+<?php
+
+/**
+* @file
+* Install, update and uninstall functions for the admin module.
+*/
+
+/**
+* Implements hook_schema().
+*/
+function admin_schema() {
+  $schema['members'] = array(
+   'description' => 'Custom member table.',
+   'fields' => array(
+     'id' => array(
+       'type' => 'serial',
+       'unsigned' => TRUE,
+       'not null' => TRUE,
+     ),
+     'username' => array(
+       'description' => 'Username',
+       'type' => 'varchar',
+       'length' => 255,
+       'not null' => TRUE,
+       'default' => '',
+     ),
+     'address' => array(
+       'description' => 'Address',
+       'type' => 'text',
+       'not null' => TRUE,
+       'size' => 'big',
+     ),
+   ),
+   'primary key' => array('id'),
+  );
+  return $schema;
+}

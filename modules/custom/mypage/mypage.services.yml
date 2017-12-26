@@ -1,0 +1,6 @@
+services:
+  mypage.db_logic:
+    class: Drupal\mypage\MyPageDbLogic
+    arguments: ['@database']
+    tags:
+      - { name: backend_overridable }

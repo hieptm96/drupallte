@@ -1,0 +1,166 @@
+{#
+/**
+ * @file
+ * Template for the main page.
+ */
+#}
+<div class="wrapper">
+  <header class="main-header">
+
+    <a href="/admin" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>A</b>LT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Admin</b>LTE</span>
+    </a>
+
+    {#{% if page.navbar_branding %}
+      {{ page.navbar_branding }}
+    {% endif %}#}
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
+      </a>
+      {% if page.navbar_right %}
+        <div class="navbar-custom-menu">
+          {{ page.navbar_right }}
+        </div>
+      {% endif %}
+    </nav>
+  </header>
+
+  {#{% if page.sidebar_first %}#}
+    <aside class="main-sidebar">
+      <!-- <section class="sidebar"> -->
+        {#{{ page.sidebar_first }}#}
+      <!-- </section> -->
+
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <!-- <img src="./../../../screenshot.png" class="img-circle" alt="User Image"> -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqZby5BVESeWmglxHkzGfNkUr9vKBaF6YnndgFsqrauilofD1wWQ" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>Admin</p>
+            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          </div>
+        </div>
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+                  <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                  </button>
+                </span>
+          </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="header">MAIN NAVIGATION</li>
+          <li class="active treeview">
+            <a href="#">
+              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              <!-- <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span> -->
+            </a>
+            <!-- <ul class="treeview-menu">
+              <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+              <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            </ul> -->
+          </li>
+          <li class="treeview">
+            <a href="/admin/content">
+              <i class="fa fa-file"></i>
+              <span>Content</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="/admin/structure">
+              <i class="fa fa-gears"></i>
+              <span>Structure</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="/admin/appearance">
+              <i class="fa fa-tree"></i> <span>Appearance</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="/admin/modules">
+              <i class="fa fa-cubes"></i> <span>Extend</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="/admin/config">
+              <i class="fa fa-wrench"></i> <span>Configuration</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="/admin/people">
+              <i class="fa fa-user"></i> <span>People</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="admin/reports">
+              <i class="fa fa-file-text-o"></i>
+              <span>Reports</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="/admin/members">
+              <i class="fa fa-edit"></i> <span>Manage members</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="/admin/help">
+              <i class="fa fa-question"></i> <span>Help</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+
+    </aside>
+  {#{% endif %}#}
+
+  <div class="content-wrapper">
+    {% if page.header %}
+      <section class="content-header">
+        {{ page.header }}
+      </section>
+    {% endif %}
+
+    <section class="content">
+      {% if page.highlighted %}
+        <div class="highlighted">{{ page.highlighted }}</div>
+      {% endif %}
+
+      {{ page.help }}
+
+      <a id="main-content"></a>
+      {{ page.content }}
+    </section>
+  </div>
+
+  {% if page.footer %}
+    <footer role="footer">
+      <div class="container">
+        {{ page.footer }}
+      </div>
+    </footer>
+  {% endif %}
+
+  {% if page.sidebar_second %}
+    <aside class="control-sidebar control-sidebar-dark">
+      {{ page.sidebar_second }}
+    </aside>
+  {% endif %}
+  <div class="control-sidebar-bg"></div>
+</div>
+
